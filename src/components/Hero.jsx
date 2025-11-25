@@ -10,7 +10,7 @@ const Hero = () => {
             <p className="lg:mt-6 text-sm mb-4 font-medium tracking-tighter">
               {HERO_CONTENT.subtitle}
             </p>
-            <img src={HERO_CONTENT.image} className="w-full"/>
+            <img src={HERO_CONTENT.image} className="w-full h-[65vh] object-cover rounded-2xl p-2"/>
         </div>
     </section>
   )
