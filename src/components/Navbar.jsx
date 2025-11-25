@@ -15,9 +15,9 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='border-b-1'>                 {/* Elemen navbar utama */}
+    <nav className='border-b'>                 {/* Elemen navbar utama */}
 
-      <div className='max-x-7xl mx-auto flex justify-between items-center py-8'>
+      <div className='max-x-7xl mx-auto flex justify-between items-center py-3'>
         {/* Wrapper utama untuk logo + menu versi desktop + tombol mobile */}
 
         <div className='pl-2'>
@@ -43,7 +43,7 @@ const Navbar = () => {
         </div>
 
         {/* Menu versi DESKTOP, tampil hanya di layar medium ke atas */}
-        <div className='hidden md:flex space-x-8 md:space-x-4 pr-2'>
+        <div className='hidden md:flex space-x-8 md:space-x-6 pr-6'>
           {LINKS.map((link, index) => (
             <a
               key={index}                        // key agar React efisien saat render

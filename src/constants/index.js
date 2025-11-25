@@ -41,7 +41,7 @@ export const LINKS = [
 ];
 
 export const HERO_CONTENT = {
-  title: "VastuSpaze",
+  title: "In Business",
   subtitle: "Reimagine Your Space with Expert Renovation Services",
   image: hero,
 };
