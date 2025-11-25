@@ -7,7 +7,10 @@ const Hero = () => {
             <h1 className="text-6xl lg:text-[10rem] p-2 uppercase font-bold">
                 {HERO_CONTENT.title}
             </h1>
-            <p className="lg:mt-6"></p>
+            <p className="lg:mt-6 text-sm mb-4 font-medium tracking-tighter">
+              {HERO_CONTENT.subtitle}
+            </p>
+            <img src={HERO_CONTENT.image} className="w-full"/>
         </div>
     </section>
   )
