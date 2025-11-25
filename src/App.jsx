@@ -6,7 +6,7 @@ const App = () => {
   return (
     <main className='overflow-x-hidden antialiased text-neutral-800'>
       <Navbar></Navbar>
-      <Hero>AAAAAAAAAAA</Hero>
+      <Hero>BBBBBBBBBBBBBBB</Hero>
     </main>
   )
 }
