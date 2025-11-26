@@ -1,0 +1,19 @@
+Jika belum ada GIT
+=================
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/wz1310/react
+
+Untuk update setelah di set GIT
+================
+git add .
+git commit -m "update"
+git push
+
+Untuk pull lalu update
+=================
+git pull origin main
+git add .
+git commit -m "update"
+git push
