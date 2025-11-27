@@ -69,7 +69,7 @@ const ScrollTopArrow = () => {
 // --- MAIN APP ---
 const App = () => {
   return (
-    <main className="overflow-x-hidden antialiased text-neutral-800">
+    <main className="overflow-x-hidden antialiased text-neutral-800 pt-20">
       <Navbar />
       <Hero />
       <Services />

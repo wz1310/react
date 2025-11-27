@@ -26,51 +26,35 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='border-b shadow-[0_4px_12px_rgba(0,0,0,0.03)]'>
+  <nav
+    className="
+      fixed top-0 w-full bg-white z-[1000] backdrop-blur-sm
+    border-b border-neutral-200/40
+    shadow-[0_20px_90px_rgba(255,220,50,0.45)]
+    "
+  >
 
-      <div className='max-w-7xl mx-auto flex justify-between items-center py-3'>
-        <div className='pl-2'>
-          <a href='/'>
-            <img src={logo} width={70} height={15} alt="Vastuspaze" />
-          </a>
-        </div>
-
-        {/* Tombol MOBILE */}
-        <div className='md:hidden'>
-          <button
-            onClick={toggleMenu}
-            className="text-2xl pr-2 focus:outline-none"
-            aria-label={isOpen ? "Close menu" : "Open menu"}
-          >
-            {isOpen ? <RiCloseLine /> : <RiMenu3Line />}
-          </button>
-        </div>
-
-        {/* Menu DESKTOP */}
-        <div className='hidden md:flex space-x-8 md:space-x-6 pr-6'>
-          {LINKS.map((link, index) => (
-            <motion.a
-              key={index}
-              href={link.link}
-              className='uppercase text-sm font-medium'
-              {...navItemAnim}
-              onClick={(e) => handleNavClick(e, link.link)}
-            >
-              {link.name}
-            </motion.a>
-          ))}
-        </div>
+    <div className='max-w-7xl mx-auto flex justify-between items-center py-3'>
+      <div className='pl-2'>
+        <a href='/'>
+          <img src={logo} width={70} height={15} alt="Vastuspaze" />
+        </a>
       </div>
 
-      {/* Menu MOBILE */}
-      <div
-        className={`${isOpen ? "block" : "hidden"} md:hidden absolute bg-white w-full py-5 px-4 mt-2 border-b shadow-md`}
-      >
-        {LINKS.map((link, index) => (
+      {/* Tombol MOBILE */}
+      <div className='md:hidden'>
+        <button onClick={toggleMenu} className="text-2xl pr-2 focus:outline-none">
+          {isOpen ? <RiCloseLine /> : <RiMenu3Line />}
+        </button>
+      </div>
+
+      {/* Menu DESKTOP */}
+      <div className='hidden md:flex space-x-6 pr-6'>
+        {LINKS.map((link, i) => (
           <motion.a
-            key={index}
+            key={i}
             href={link.link}
-            className='uppercase text-lg font-medium block py-2 tracking-wide'
+            className='uppercase text-sm font-medium'
             {...navItemAnim}
             onClick={(e) => handleNavClick(e, link.link)}
           >
@@ -78,9 +62,22 @@ const Navbar = () => {
           </motion.a>
         ))}
       </div>
+    </div>
 
-    </nav>
-  )
+    {/* Menu MOBILE */}
+    <div className={`${isOpen ? "block" : "hidden"} md:hidden absolute bg-white w-full py-5 px-4 border-b shadow-md`}>
+      {LINKS.map((link, i) => (
+        <motion.a key={i} href={link.link} className='block py-2 text-lg uppercase'
+          onClick={(e) => handleNavClick(e, link.link)}
+        >
+          {link.name}
+        </motion.a>
+      ))}
+    </div>
+
+  </nav>
+)
+
 }
 
 export default Navbar
