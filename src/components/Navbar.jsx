@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import logo from '../assets/logo.webp'
+import logo from '../assets/wiza.png'
 import { RiCloseLine, RiMenu3Line } from '@remixicon/react'
 import { LINKS } from '../constants'
 
@@ -31,7 +31,7 @@ const Navbar = () => {
       <div className='max-w-7xl mx-auto flex justify-between items-center py-3'>
         <div className='pl-2'>
           <a href='/'>
-            <img src={logo} width={150} height={15} alt="Vastuspaze" />
+            <img src={logo} width={70} height={15} alt="Vastuspaze" />
           </a>
         </div>
 
