@@ -3,7 +3,10 @@ import { PORTFOLIO_PROJECTS } from '../constants'
 
 const Portofolio = () => {
   return (
-    <section className='max-w-7xl mx-auto border-b-2' id='portofolio'>
+    <section className='max-w-7xl mx-auto' id='portfolio'>
+        <h2 className="text-xl lg:text-3xl tracking-tight text-center uppercase mb-10">
+          Portfolio
+        </h2>
         <div className='mb-20'>
             <h2 className='text-xl lg:text-3xl tracking-tight text-center
             uppercase mt-20 mb-12'></h2>

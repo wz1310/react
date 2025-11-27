@@ -17,7 +17,7 @@ const About = () => {
   const opacity = useTransform(scrollYProgress, [0.1, 0.5, 0.8], [1, 0.5, 0])
 
   return (
-    <section ref={ref} className='max-w-7xl mx-auto border-b-2 mt-20' id='about'>
+    <section ref={ref} className='max-w-7xl mx-auto border-b border-gray-200/30 mt-20' id='about'>
       <h2 className='text-xl lg:text-3xl tracking-tight text-center uppercase mb-12 mx-4'>
         About
       </h2>
