@@ -41,7 +41,7 @@ export const LINKS = [
 ];
 
 export const HERO_CONTENT = {
-  title: "Business",
+  title: "Businessx",
   subtitle: "Reimagine Your Space with Expert Renovation Services",
   image: hero,
 };
